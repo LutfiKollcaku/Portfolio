@@ -1,0 +1,25 @@
+COME FARE UN SITO WEB DALL'INIZIO
+
+1. alberatura della pagina
+2. wireframe , schizzo grafico fatto anche su penna, per far vedere i contenuti della pagina 
+3. guarda su hotjar e implementarlo sul sito 
+4. consiglio: non bisogna fare un sito che piaccia a noi ma che piace ai clienti
+5. ho la bozza grafica del SITO
+6. vado dal cliente e mostro la bozza grafica di persona perchè il cliente deve essere seguito e fatta firmare 
+    - molta importanza del progetto e bozza grafica
+        - quando me la firma e me l'ha approva e poi mandare il una email di recap e di ulteriore conferma
+            -non mandare progetti in pdf perchè potrebbero essere cambiati e cambiare piano 
+7. attenzione al dettaglio dei contenuti sempre
+8. osservo la bozza grafica 
+9. su un sito max 2 o 3 font, cercare di essere uniforme
+10. h1 solo uno nel sito 
+11. per ogni titolo fare tutto uguale a parte il titolo primario
+12. osservare la bozza per vedere che cosa ho in comune e fare classi o id per le cose uguali
+13. fare una custom properties per i colori in css, ovvero le variabili  
+14. dare elementi distintivi del sito, logo menu e nel footer -> "per una azienda scrivere: luogo, P.IVA, codice fiscale, registro imprese nel confcommercio e eventualmente il marchio registrato nella camera di commercio"  
+15. pagine interne stesso layout
+16. per vedere e rubare il colore in un sito che piace usare andare su: "COLORZILLA.IT"
+17. per vedere quanto grande è un div che ci piace andare su: "MEASURE.IT"
+18. per vedere il font e rubarlo vai su: "NINJAFONT"
+19. Controllare per il css su: "CSS TRICK"
+20. libreria js per fare animazioni gisap

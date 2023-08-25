@@ -1,0 +1,337 @@
+@charset 'UTF-8';
+
+/*variabili css e custom properties*/
+:root {
+    --first-color: #e04343;
+    --second-color: #ffe800;
+    --third-color: #dbdee0;
+    --fourth-color: #000;
+    --fifth-color: #6b6e71;
+
+    /*--witdh: 600px;
+    --height: 600px;
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*con var() posso usare le variabili*/
+
+/*.pippo {
+    width: var(--witdh);    
+    height: var(--height);
+    background-color: var(--first-color);
+}
+*/
+
+ 
+#hero {
+    min-height: 775px;
+    /*background-color: purple;*/
+    padding-top: 50px;  /* */
+    /*background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;  
+    */
+    background: url(../img/header-bg.jpg) right bottom no-repeat #fbfbfb ;
+    background-size: contain;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+h1 {
+    text-transform: uppercase;
+    font-size: 120px ;
+    font-weight: 600;
+    line-height: 110px; /* altezza tra una linea e altra*/
+    letter-spacing: -8px;   /*distanza tra le lettere in questo caso più vicine*/
+    padding-top: 138px;
+    
+}
+
+.text-red { 
+    color: var(--first-color);
+}
+
+.text-grey {
+    color: var(--third-color);
+}
+
+.text-yellow {
+    color: var(--second-color);
+}
+
+.container { 
+    max-width: 1170px;  /*ottica responsive usare max width perchè fino al max lo vedo tutto se vado sotto non mi fa vedere la barra di scorrimento*/
+    margin: 0 auto;
+   /* background-color: yellow;*/
+} 
+
+#hero h3 {
+    font-size: 20px;
+    opacity: .5;
+    color: var(--first-color);
+    letter-spacing: 18px; /*aumetare spazio tra le lettere*/
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+#about {
+    padding: 50px;
+    min-height: 410px;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    padding: 90px 0 100px 0 ;
+}
+
+.arrow {
+    /*background-image: url(../img/h1-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;*/
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 60px;
+    font-weight: bold;  
+    margin-top: 50px;    
+}
+
+.arrow::after {
+    content: '';
+    display: block;
+    width: 236px;   /*misure esatte dell'immagine senza dover usare no repeat*/
+    height: 13px;
+    background-image: url(../img/h1-bg.png);
+    text-align: center;
+    margin: 15px auto 0 auto;
+    
+}
+
+#about p {
+   max-width: 50%;
+   margin: 0 auto; 
+   text-align: center; 
+   line-height: 30px;
+}
+
+.container_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    place-items: center;
+}
+
+.client {
+
+    padding: 50px;
+    min-height: 410px;  
+    font-weight: lighter;
+    margin-bottom: 50px;
+
+}
+
+.cards {
+    width: 500px;
+    padding: 2px 16px; 
+    text-align: center;
+    margin-bottom: 20px;    
+}
+
+.photo {
+    position: relative;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 180px;
+    font-size: 56px;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+    -webkit-transition: all .5s ease-out;       /*-webkit serve per la compatibilità per gli altri motori di ricerca*/  
+    transition: all .5s ease-out;
+    cursor: pointer;
+
+}
+
+.trattino {
+
+    width: 100px;
+    height: 2px;
+    background-color: var(--third-color);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cards p {
+    color: var(--fifth-color);
+    line-height: 30px;
+}
+
+.cards:hover .photo {
+    background-color: var(--first-color);
+    color: white;
+    font-size: 70px;
+}
+
+/*-----------------------
+        IMMAGINI CON TESTO
+------------------------*/
+#text_photo {
+    width: 100%;
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+}
+
+.pics{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 410px;
+}
+#text_photo .describes {
+    width: 50%;
+    height: 410px;
+    padding: 50px;
+}
+
+.describes h3 {
+
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.describes h3::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #fff;
+    margin: 25px 0 25px ;
+}
+
+.describes p {
+    color: white;
+    line-height: 30px;
+}
+
+.describes .read_more {
+    padding: 20px 30px;
+    border: 1px solid white;
+    max-width: 170px;  
+    text-align: center;  
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin-top: 35px;
+    -webkit-transition: all .5s ease-out;       /*-webkit serve per la compatibilità per gli altri motori di ricerca*/  
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+.describes .read_more:hover {
+    background-color: white;
+    color: var(--first-color);
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.image {
+
+    max-width: 70%;
+    display: flex;
+    place-items: center;
+    margin: 0 auto;
+    
+}
+
+.img {
+    overflow: hidden;
+    max-width: 100%;
+    
+}
+
+.image .img img{
+    object-fit: cover;
+    margin-left: -160px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.image .img :hover img{
+    -webkit-filter: none;
+    filter: none; 
+   transform: scale(1.2);
+}
+
+/* 
+    MEDIA QUERY PER FARLO RESPONSIVE 
+*/
+
+@media screen and (max-width: 1240px) {
+   .image{
+    display: block;
+   }
+   .image .img img {
+    margin-left: 0;
+   }
+  }
+
+
+
+
+
+
+
+/*.photo {
+    position: relative;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 180px;
+    font-size: 56px;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    border: 1px solid #E04343;
+    color: #E04343;
+}
+
+
+
+
+
+
+
+
